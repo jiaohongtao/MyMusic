@@ -1,0 +1,52 @@
+body { padding:0; margin:0}
+ul{ padding:0; margin:0; list-style:none}
+.main{ width:1150px; margin:0 auto}
+
+#headerline{ height:4px; width:100%; background:url(../images/header-line.png)}
+.map{ background:#ededed; background-image:url(../images/map.png); height:44px; background-repeat:no-repeat; width:100%; margin-bottom:10px}
+.map b{ color:White; font-family:楷体; font-size:22px; display:block; padding:10px 0 0 30px}
+#foot{ background:url(../images/footer-bg.png); height:80px; width:100%; margin-top:30px; text-align:center}
+#foot a,#foot a:visited{font-size:20px; font-family:楷体; display:block; padding-top:20px; color:White}
+
+/*菜单模块*/
+.menu{ height:60px; background:#fbfbfa}
+.menu li{ padding:20px; float:left; }
+.menu li a,.menu li a:visited{color:Black; font-size:16px; text-decoration:none}
+.menu li a:hover{ color:Green}
+
+/*搜索*/
+.search{ height:65px; border-bottom:solid 1px #f2f2f2; padding-top:30px}
+.search div{display:inline-block}
+.search button{ display:inline-block}
+
+/*小banner模块*/
+#bannerimg{  padding:3px; border:solid 1px #f2f2f2; height:361px}
+
+/*右侧区域*/
+.right_news ul{ margin-left:20px}
+.right_news li{ padding:10px 20px; border-bottom:dashed 1px #f2f2f2; list-style:url(../images/jt.gif)}
+.right_news li span,.banner li a{ display:inline-block}
+.right_news li span{ padding-left:20px}
+
+.right_imgnews li{ padding:10px 0}
+.right_imgnews img{ width:90%; padding:3px; border:solid 1px #f2f2f2; }
+.right_imgnews h3{ display:block; padding-bottom:10px}
+.right_imgnews span{ margin-right:20px;}
+
+/*thingshow页面*/
+.jinmes{ float:left; overflow:hidden}
+.jinmes li{  width:350px; text-align:left; padding-top:20px;}
+
+/*带图列表*/
+.thinglist img{ width:100%; height:215px}
+.thinglist div{ position:relative}
+.thinglist div b{ display:block; color:White; font-size:20px; font-family:黑体; position:absolute; top:20px; left:20px}
+.thinglist div:hover{-moz-box-shadow: 5px 5px 5px #888888; box-shadow: 10px 10px 5px #888888;}
+
+/*登陆与注册*/
+.formbg{ background:#F7F7F7;}
+.formmain{ width:970px;  margin:0 auto; background:url(../images/loginMain_bg.png); min-height:442px; background-repeat:no-repeat; overflow:hidden}
+.formborder{ float:right; background:white; width:380px; border-radius:5px; border:solid 1px #DCDCDC; padding:20px; margin:20px 0}
+
+
+

@@ -1,0 +1,12 @@
+﻿body{ background:url(../images/loginbg.jpg); background-repeat:repeat-x; margin:0; padding:0; font-size:12px}
+#loginborder{margin:0 auto; background:url(../images/login.jpg); width:1220px; height:491px; position:relative}
+table{width:200px; left:640px; top:148px; position:absolute; border:solid 0 red}
+.val{width:150px; border-width:0; color:black}
+.btn{width:214px; height:26px; background:url(../images/btn.png); border-width:0; position:absolute; top:270px; left:600px}
+
+input:focus {
+    outline: 0;
+    border: 1px solid #f95d5d;
+    box-shadow: 0 0 10px 0 #f95d5d;
+}
+td{height:35px}

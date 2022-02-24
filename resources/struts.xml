@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.action.extension" value="action"/>
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <constant name="struts.multipart.saveDir" value="/file"/>
+    <constant name="struts.multipart.maxSize" value="100000000"/>
+
+    <package name="admin" namespace="/admin" extends="struts-default">
+        <action name="*_*" method="{2}" class="com.music.action.{1}Action">
+            <result name="thingtypelist">/admin/thingtype.jsp</result>
+            <result name="addthingtype">/admin/addthingtype.jsp</result>
+            <result name="introducelist">/admin/introduce.jsp</result>
+            <result name="addintroduce">/admin/addintroduce.jsp</result>
+            <result name="newstypelist">/admin/newstype.jsp</result>
+            <result name="addnewstype">/admin/addnewstype.jsp</result>
+            <result name="thinglist">/admin/thing.jsp</result>
+            <result name="addthing">/admin/addthing.jsp</result>
+            <result name="newslist">/admin/news.jsp</result>
+            <result name="addnews">/admin/addnews.jsp</result>
+            <result name="userlist">/admin/user.jsp</result>
+            <result name="singerlist">/admin/singer.jsp</result>
+            <result name="addsinger">/admin/addsinger.jsp</result>
+        </action>
+    </package>
+
+    <package name="web" namespace="/" extends="struts-default,json-default">
+        <action name="*_*" method="{2}" class="com.music.action.{1}Action">
+            <result name="index">/index.jsp</result>
+            <result name="newslist">/news.jsp</result>
+            <result name="newsshow">/newsshow.jsp</result>
+            <result name="thinglist">/thing.jsp</result>
+            <result name="thingshow">/thingshow.jsp</result>
+            <result name="reg">/reg.jsp</result>
+            <result name="edit">/edit.jsp</result>
+            <result name="login">/login.jsp</result>
+            <result name="introduceshow">/introduce.jsp</result>
+            <result name="singerlist">/singer.jsp</result>
+            <result name="singershow">/singershow.jsp</result>
+            <result name="success" type="json">
+                <param name="root">json</param>
+            </result>
+        </action>
+    </package>
+
+    <package name="user" namespace="/user" extends="struts-default,json-default">
+        <action name="*_*" method="{2}" class="com.music.action.{1}Action">
+            <result name="dinglist">/user/myding.jsp</result>
+            <result name="success" type="json">
+                <param name="root">json</param>
+            </result>
+        </action>
+    </package>
+
+
+    <package name="files" namespace="/" extends="json-default">
+        <action name="upload" method="alterImage" class="com.music.action.UploadAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+    </package>
+
+    <package name="layedit" namespace="/" extends="json-default">
+        <action name="editupload" method="alterImage" class="com.music.action.EditUploadAction">
+            <result name="success" type="json">
+                <param name="root">result</param>
+            </result>
+        </action>
+    </package>
+
+</struts> 
